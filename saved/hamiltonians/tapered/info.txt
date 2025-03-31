@@ -1,0 +1,4 @@
+Tapered hamiltonians, tapered with openfermion.transforms.taper_off_qubits
+Sz_up, Sz_d tapered separately, 2 qubits removed.
+Saved with save_operator(,,plain_text = True)
+use load_operator(,,plain_text = True)
