@@ -17,9 +17,23 @@ import numpy as np
 from copy import deepcopy
 from openfermion import get_sparse_operator, expectation, jordan_wigner, FermionOperator
 from scipy.optimize import minimize
+from optimparallel import minimize_parallel
 from scipy.linalg import expm
 from utils.ferm_utils import *
 from utils.mat_utils import *
+
+def grad(params, n_qubits, V_type, poly, Hs, ref_wfn, qubit_pairs, basis_dict):
+    #n_qubits, V_type, poly, Hs, ref_wfn = args
+
+    #build R
+    Rs = FermionicReflection.build_R(params, n_qubits, V_type, poly, sparse=True, basis_dict=basis_dict, qubit_pairs = qubit_pairs)
+
+    #commutator
+    com = Hs @ Rs - Rs @ Hs
+    
+    g =  - np.abs(np.imag(expectation(com, ref_wfn))) #commutator is anti hermitian, thus expectation values are imaginary, and we maximize absolute value.
+    return g
+
 
 def get_poly(kind: str, qubit_idx: list):
 
@@ -141,6 +155,12 @@ class FermionicReflection:
         """
 
         self.n_qubits = n_qubits
+
+        if "basis_dict" in kwargs:
+            self.basis_dict = kwargs["basis_dict"]
+        else:
+            self.basis_dict = None
+
         self.V_type = V_type
         if V_type == 'restricted':
             self.qubit_pairs = kwargs["qubit_pairs"]
@@ -248,11 +268,19 @@ class FermionicReflection:
 
         return param_mat
     
+    def init_basis_dict(self):
+        """
+        Creates and stores sparse basis_dict
+
+        """
+        if self.basis_dict is None:
+            self.basis_dict = build_sparse_basis(self.n_qubits)
+    
     def get_param_mat(self):
         return FermionicReflection.build_param_mat(self.params, self.n_qubits, self.V_type, qubit_pairs = self.qubit_pairs)
     
     @classmethod
-    def build_R(cls, params, n_qubits, V_type, poly, sparse=False, **kwargs):
+    def build_R(cls, params, n_qubits, V_type, poly, sparse=False, basis_dict=None, **kwargs):
         
         param_mat = cls.build_param_mat(params, n_qubits, V_type, **kwargs)
         U = expm(param_mat)
@@ -261,42 +289,44 @@ class FermionicReflection:
         poly_tbt, const = chem_ferm_to_chem_tbt(promote_cartan_twobody(poly), n_qubits) #ignoring constant term as it is a global phase.
         R_tbt = rotate_chem_tbt(poly_tbt, U)
 
-        op = chem_tbt_to_chem_ferm(R_tbt) + const
         if sparse:
-            return get_sparse_operator(jordan_wigner(op), n_qubits)
+
+            if basis_dict is None:
+                op = chem_tbt_to_chem_ferm(R_tbt) + const
+                return get_sparse_operator(jordan_wigner(op), n_qubits)
+            
+            return get_sparse_fermop(R_tbt, basis_dict=basis_dict) + const*sp.eye(2**n_qubits)
         else:
+            op = chem_tbt_to_chem_ferm(R_tbt) + const
             return op
 
     def get_R(self, sparse=False):
-        return FermionicReflection.build_R(self.params, self.n_qubits, self.V_type, self.poly, sparse=sparse, qubit_pairs=self.qubit_pairs)
+        return FermionicReflection.build_R(self.params, self.n_qubits, self.V_type, self.poly, sparse=sparse, basis_dict=self.basis_dict, qubit_pairs=self.qubit_pairs)
 
-    def optimize_grad(self, Hs, ref_wfn, init_param_type = 'zero'):
+    def optimize_grad(self, Hs, ref_wfn, init_param_type = 'zero', parallel = True):
         """
         Optimize params to maximize generator gradient wrt to Hamiltonian H
 
         Since generators are hermitian, gradient is imaginary
         """
-
-        def grad(params, n_qubits, V_type, poly, Hs, ref_wfn, qubit_pairs):
-            #n_qubits, V_type, poly, Hs, ref_wfn = args
-
-            #build R
-            Rs = FermionicReflection.build_R(params, n_qubits, V_type, poly, sparse=True, qubit_pairs = qubit_pairs)
-
-            #commutator
-            com = Hs @ Rs - Rs @ Hs
-            
-            g =  - np.abs(np.imag(expectation(com, ref_wfn))) #commutator is anti hermitian, thus expectation values are imaginary, and we maximize absolute value.
-            return g
         
         n_params = FermionicReflection.get_num_params(self.n_qubits, self.V_type, qubit_pairs=self.qubit_pairs)
+        print("Initializing basis dictionary...")
+        self.init_basis_dict()
+        
+        print("Basis Dictionary initialized.\n\n\nInitializing gradient optimization of polynomial {} ...".format(self.poly))
 
         if init_param_type == 'zero':
             param_init = np.zeros(n_params)
         elif init_param_type == 'random':
             param_init = np.random.rand(n_params)
         
-        result = minimize(grad, param_init, args=(self.n_qubits, self.V_type, self.poly, Hs, ref_wfn, self.qubit_pairs))
+        print("Initial parameters: {}".format(param_init))
+        
+        if parallel:
+            result = minimize_parallel(grad, param_init, args=(self.n_qubits, self.V_type, self.poly, Hs, ref_wfn, self.qubit_pairs, self.basis_dict))
+        else:
+            result = minimize(grad, param_init, args=(self.n_qubits, self.V_type, self.poly, Hs, ref_wfn, self.qubit_pairs, self.basis_dict))
         self.params = result.x
 
         print("\n\nCompleted gradient optimization, max gradient = {}".format(-result.fun))

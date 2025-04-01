@@ -1,5 +1,6 @@
-from openfermion import FermionOperator
+from openfermion import FermionOperator, jordan_wigner, get_sparse_operator
 import numpy as np
+from scipy.sparse import csc_matrix
 
 def chem_ferm_to_chem_tbt(op: FermionOperator, n_qubits, tol = 1e-5):
     tbt = np.zeros((n_qubits, n_qubits, n_qubits, n_qubits), complex)
@@ -71,3 +72,36 @@ def promote_cartan_twobody(op):
             op_new += FermionOperator('{}^ {} {}^ {}'.format(key[0][0], key[0][0], key[2][0], key[2][0]), coeff)
     
     return op_new
+
+def build_sparse_basis(n_qubits):
+    """
+    Builds dictionary of sparse versions of ferm op a_i^ a_j a_k^ a_l
+
+    Uses Jordan-Wigner transform by default
+    
+    """
+    basis_dict = {}
+
+    for i in range(n_qubits):
+        for j in range(n_qubits):
+            for k in range(n_qubits):
+                for l in range(n_qubits):
+                    basis_dict[(i, j, k, l)] = get_sparse_operator(jordan_wigner(FermionOperator('{}^ {} {}^ {}'.format(i, j, k, l), 1.0)), n_qubits)
+    return basis_dict
+
+def get_sparse_fermop(tbt, basis_dict):
+    """
+    Construct sparse operator represented by chemist ordered tensor, tbt using premade sparse operator tensor
+
+    """
+
+    n_qubits = len(tbt)
+    op = csc_matrix((2**n_qubits, 2**n_qubits))
+
+    for i in range(n_qubits):
+        for j in range(n_qubits):
+            for k in range(n_qubits):
+                for l in range(n_qubits):
+                    op += basis_dict[(i, j, k, l)]*tbt[i, j, k, l]
+    
+    return op
