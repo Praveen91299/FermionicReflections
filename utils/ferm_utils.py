@@ -1,6 +1,7 @@
 from openfermion import FermionOperator, jordan_wigner, get_sparse_operator
 import numpy as np
 from scipy.sparse import csc_matrix
+from opt_einsum import contract
 
 def chem_ferm_to_chem_tbt(op: FermionOperator, n_qubits, tol = 1e-5):
     tbt = np.zeros((n_qubits, n_qubits, n_qubits, n_qubits), complex)
@@ -30,7 +31,7 @@ def rotate_chem_tbt(tbt, U):
 
     assert y == a and y == b and y == c and y == d, "Incompatible rotation matrix."
 
-    tbt_new = np.einsum('ijkl,pi,qj,rk,sl->pqrs', tbt, U, U_conj, U, U_conj)
+    tbt_new = contract('pi,qj,ijkl,rk,sl->pqrs', U, U_conj, tbt, U, U_conj)
 
     return tbt_new
 
