@@ -305,6 +305,13 @@ class FermionicReflection:
     def get_R(self, sparse=False):
         return FermionicReflection.build_R(self.params, self.n_qubits, self.V_type, self.poly, sparse=sparse, basis_dict=self.basis_dict, qubit_pairs=self.qubit_pairs)
 
+    def get_gradient(self, Hs, ref_wfn):
+        """
+        Return gradient at current parameter value
+
+        """
+        return grad(self.params, self.n_qubits, self.V_type, self.poly, Hs, ref_wfn, self.qubit_pairs, self.basis_dict)
+
     def optimize_grad(self, Hs, ref_wfn, init_param_type = 'zero', parallel = True):
         """
         Optimize params to maximize generator gradient wrt to Hamiltonian H
