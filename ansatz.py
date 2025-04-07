@@ -141,8 +141,6 @@ class ReflectionAnsatz:
         self.taus = result.x
 
         print("\nOptimization terminated successfully, energy at {}".format(self.energy(Hs)))
-        # print("Final taus: {}".format(self.taus))
-        # print("Final reflection operator (FermionOperator) used:\n", [refl.get_R(False) for refl in self.reflections])
         return
 
 class FermionicReflection:
@@ -299,7 +297,7 @@ class FermionicReflection:
             
             return get_sparse_fermop(R_tbt, basis_dict=basis_dict) + const*sp.eye(2**n_qubits)
         else:
-            op = chem_tbt_to_chem_ferm(R_tbt) + const # this is wat I should print as reflection operator
+            op = chem_tbt_to_chem_ferm(R_tbt) + const
             return op
 
     def get_R(self, sparse=False):
@@ -337,10 +335,7 @@ class FermionicReflection:
         else:
             result = minimize(grad, param_init, args=(self.n_qubits, self.V_type, self.poly, Hs, ref_wfn, self.qubit_pairs, self.basis_dict))
         self.params = result.x
-
-        # Store the max gradient value 
-        self.max_grad = -result.fun
-
+        
         print("\n\nCompleted gradient optimization, max gradient = {}".format(-result.fun))
         return result.x
     
