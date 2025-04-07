@@ -15,12 +15,49 @@ Class for generator object.
 
 import numpy as np
 from copy import deepcopy
-from openfermion import get_sparse_operator, expectation, jordan_wigner, FermionOperator
+from openfermion import get_sparse_operator, expectation, jordan_wigner, FermionOperator, hermitian_conjugated
 from scipy.optimize import minimize
 from optimparallel import minimize_parallel
 from scipy.linalg import expm
 from utils.ferm_utils import *
 from utils.mat_utils import *
+
+def reflection_transform(H, R, tau, sparse = False):
+    """
+    Apply the transformation:
+      H_tilde = H 
+                - i * (sin(tau)/2) * [H, R]
+                + (1 - cos(tau))/2 * (R H R - H).
+    
+    Args:
+        H   (FermionOperator): Original Hamiltonian
+        R   (FermionOperator): Reflection operator
+        tau (float):          Reflection angle/parameter
+
+    Returns:
+        FermionOperator: The transformed Hamiltonian H_tilde.
+    """
+    sin_t2 = np.sin(tau/2)
+    cos_t2 = np.cos(tau/2)
+    
+    if sparse:
+        HR = H@R
+        RHR = R@HR
+        comm_HR = HR - HR.getH()
+    else:
+        # Commutator [H, R] = H*R - R*H
+        HR = H*R
+        RHR = R * HR
+        comm_HR = HR - hermitian_conjugated(HR)
+
+    # Combine terms
+    H_tilde = (
+        (cos_t2**2) * H 
+        - 1j * (sin_t2 * cos_t2) * comm_HR
+        + (sin_t2**2) * RHR
+    )  
+    
+    return H_tilde
 
 def grad(params, n_qubits, V_type, poly, Hs, ref_wfn, qubit_pairs, basis_dict):
     #n_qubits, V_type, poly, Hs, ref_wfn = args
@@ -142,6 +179,29 @@ class ReflectionAnsatz:
 
         print("\nOptimization terminated successfully, energy at {}".format(self.energy(Hs)))
         return
+    
+    def dress_hamiltonian(self, H, sparse = True):
+        """
+        Returns dressed Hamiltonain
+
+        H : FermionOperator or csc_matrix
+
+        if sparse == True, expects sparse H
+        
+        """
+        if sparse:
+            assert sp.issparse(H), "Hamiltonian not sparse..."
+
+        H_new = deepcopy(H)
+        
+        n_ref = len(self.reflections)
+        for k in reversed(range(0, n_ref)):
+            R = self.reflections[k].get_R(sparse)
+            tau = self.taus[k]
+
+            H_new = reflection_transform(H_new, R, tau=tau, sparse=sparse)
+        
+        return H_new
 
 class FermionicReflection:
     def __init__(self, n_qubits, poly, V_type, params_init = None, **kwargs):
@@ -335,9 +395,6 @@ class FermionicReflection:
         else:
             result = minimize(grad, param_init, args=(self.n_qubits, self.V_type, self.poly, Hs, ref_wfn, self.qubit_pairs, self.basis_dict))
         self.params = result.x
-        
+
         print("\n\nCompleted gradient optimization, max gradient = {}".format(-result.fun))
         return result.x
-    
-    def dress_H(self, H, tol=1e-3):
-        return H
