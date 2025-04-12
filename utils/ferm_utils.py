@@ -1,6 +1,7 @@
 from openfermion import FermionOperator, jordan_wigner, get_sparse_operator
 import numpy as np
-from scipy.sparse import csc_matrix
+from scipy.sparse import csc_matrix, issparse
+from scipy.sparse.linalg import expm as sparse_expm
 from opt_einsum import contract
 
 def chem_ferm_to_chem_tbt(op: FermionOperator, n_qubits, tol = 1e-5):
@@ -88,6 +89,8 @@ def build_sparse_basis(n_qubits):
             for k in range(n_qubits):
                 for l in range(n_qubits):
                     basis_dict[(i, j, k, l)] = get_sparse_operator(jordan_wigner(FermionOperator('{}^ {} {}^ {}'.format(i, j, k, l), 1.0)), n_qubits)
+    
+    print("...Built sparse basis for {} qubits".format(n_qubits))
     return basis_dict
 
 def get_sparse_fermop(tbt, basis_dict):
@@ -106,3 +109,33 @@ def get_sparse_fermop(tbt, basis_dict):
                     op += basis_dict[(i, j, k, l)]*tbt[i, j, k, l]
     
     return op
+
+def return_sparse(op, n_qubits):
+    """
+    Returns sparse operator, does nothing if already sparse
+
+    """
+    if issparse(op):
+        return op
+    else:
+        get_sparse_operator(op, n_qubits)
+
+Epq = lambda p, q: FermionOperator('{}^ {}'.format(p, q), 1.0)
+g_pq_real = lambda p, q: Epq(p, q) - Epq(q, p)
+g_pq_imag = lambda p, q: 1.j*(Epq(p, q) + Epq(q, p))
+
+def get_U(mat, n_qubits):
+    """
+    Get the 2^N x 2^N unitary corresponding to the N x N matrix representation of the U(N) algebra
+
+    """
+
+    assert np.shape(mat) == (n_qubits, n_qubits)
+
+    op = FermionOperator('', 0)
+    for i in range(n_qubits):
+        for j in range(n_qubits):
+            op += mat[i, j]*Epq(i, j)
+    
+    s_op = get_sparse_operator(op, n_qubits)
+    return sparse_expm(s_op)
