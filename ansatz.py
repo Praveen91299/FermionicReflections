@@ -156,7 +156,7 @@ def iterative_V_construction(n_qubits, H, poly, n_generators, ref_state, basis_d
     
     """
 
-    Hs = get_sparse_operator(H, n_qubits)
+    Hs = return_sparse(H, n_qubits)
     poly_tbt, const = chem_ferm_to_chem_tbt(promote_cartan_twobody(poly), n_qubits) #ignoring constant term as it is a global phase.
 
     qubit_pairs = []
@@ -604,7 +604,7 @@ class FermionicReflection:
             return grad(self.params, self.n_qubits, self.excitation_type, self.poly, Hs, ref_wfn, self.qubit_pairs, self.basis_dict)
         elif self.V_type == "iterative":
 
-            tbt = chem_ferm_to_chem_tbt(promote_cartan_twobody(self.poly))
+            tbt, const = chem_ferm_to_chem_tbt(promote_cartan_twobody(self.poly), self.n_qubits)
             return grad_iterative(self.params, self.n_qubits, self.qubit_pairs, tbt, Hs, self.basis_dict, ref_wfn)
 
     def optimize_grad(self, Hs, ref_wfn, init_param_type = 'zero', parallel = True):
