@@ -2,6 +2,7 @@ from openfermion import FermionOperator, jordan_wigner, get_sparse_operator
 import numpy as np
 from scipy.sparse import csc_matrix, issparse
 from scipy.sparse.linalg import expm as sparse_expm
+import scipy
 from opt_einsum import contract
 
 def chem_ferm_to_chem_tbt(op: FermionOperator, n_qubits, tol = 1e-5):
@@ -126,16 +127,18 @@ g_pq_imag = lambda p, q: 1.j*(Epq(p, q) + Epq(q, p))
 
 def get_U(mat, n_qubits):
     """
-    Get the 2^N x 2^N unitary corresponding to the N x N matrix representation of the U(N) algebra
+    Get the 2^N x 2^N unitary corresponding to the N x N matrix representation, mat of the U(N) algebra
 
     """
 
     assert np.shape(mat) == (n_qubits, n_qubits)
 
+    coeff_mat = scipy.linalg.logm(mat)
+
     op = FermionOperator('', 0)
     for i in range(n_qubits):
         for j in range(n_qubits):
-            op += mat[i, j]*Epq(i, j)
+            op += coeff_mat[i, j]*Epq(i, j)
     
     s_op = get_sparse_operator(op, n_qubits)
     return sparse_expm(s_op)
