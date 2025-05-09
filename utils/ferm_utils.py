@@ -1,4 +1,4 @@
-from openfermion import FermionOperator, jordan_wigner, get_sparse_operator
+from openfermion import FermionOperator, jordan_wigner, get_sparse_operator, normal_ordered, bravyi_kitaev, QubitOperator
 import numpy as np
 from scipy.sparse import csc_matrix, issparse
 from scipy.sparse.linalg import expm as sparse_expm
@@ -119,7 +119,26 @@ def return_sparse(op, n_qubits):
     if issparse(op):
         return op
     else:
-        get_sparse_operator(op, n_qubits)
+        return get_sparse_operator(op, n_qubits)
+
+def return_qubitop(op, n_qubits=None, transform='jw'):
+    """
+    Returns QubitOperator with mentioned transformation, does nothing if already qubit operator, raises assertion error if sparse and cannot be converted.
+    
+    """
+    if type(op) is QubitOperator:
+        return op
+    assert not issparse(op), "Operator is sparse, cannot be converted to QubitOperator"
+
+    if type(op) is FermionOperator:
+        op = normal_ordered(op) # makes transforms faster
+
+        if transform == 'jw':
+            return jordan_wigner(op)
+        elif transform == 'bk':
+            return bravyi_kitaev(op, n_qubits)
+    
+    raise AssertionError("Operator type not recognized!")
 
 Epq = lambda p, q: FermionOperator('{}^ {}'.format(p, q), 1.0)
 g_pq_real = lambda p, q: Epq(p, q) - Epq(q, p)

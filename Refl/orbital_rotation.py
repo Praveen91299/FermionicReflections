@@ -214,8 +214,8 @@ class RestrictedOrbitalRotation(ParameterizedOrbitalRotation):
     """
     def __init__(self, n_qubits, params, qubit_pairs):
         self.n_qubits = n_qubits
-        self.params = params
         self.qubit_pairs = qubit_pairs
+        self.params = params
     
     @classmethod
     def num_params(cls, qubit_pairs):

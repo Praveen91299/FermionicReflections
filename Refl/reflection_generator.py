@@ -104,7 +104,9 @@ class FermionicReflection:
 
         """
         if self.basis_dict is None:
+            print("Initializing basis dictionary...")
             self.basis_dict = build_sparse_basis(self.n_qubits)
+            print("Basis Dictionary initialized.\nInitializing gradient optimization...")
     
     def get_num_params(self):
         """
@@ -118,7 +120,7 @@ class FermionicReflection:
         Sets orbital rotation params
         
         """
-        assert len(params) == self.get_num_params()
+        assert len(params) == self.get_num_params(), 'len(params): {}, while {} params expected.'.format(len(params), self.get_num_params())
 
         idx = 0
         for OR in self.orbital_rotations:
@@ -166,32 +168,30 @@ class FermionicReflection:
         """
 
         n_params = self.get_num_params()
-
-        print("Initializing basis dictionary...")
         self.init_basis_dict()
-        print("Basis Dictionary initialized.\n\n\nInitializing gradient optimization of polynomial\n{} ...".format(self.poly))
 
         params_list = [np.zeros(n_params)]
         for _ in range(n_random):
             params_list.append(np.random.rand(n_params))
         
-        max_gradient = 0
+        max_gradient = -1
         params_at_max_gradient = []
 
+        print("Entering gradient optimization...")
         for i, params in enumerate(params_list):
-            print("Grad optimization trial {}".format(i+1))
-            print("Initial parameters: \n{}".format(params_list[i]))
+            print("Trial {}, Initial params: {}".format(i+1, params))
 
             if parallel:
                 result = minimize_parallel(grad, params, args=(self.n_qubits, self.poly, self.orbital_rotations, Hs, ref_wfn, self.basis_dict))
             else:
                 result = minimize(grad, params, args=(self.n_qubits, self.poly, self.orbital_rotations, Hs, ref_wfn, self.basis_dict))
             
-            print("\nCompleted gradient optimization, gradient of try {} at = {}".format(i+1, -result.fun))
+            print("Completed optimization, gradient = {}".format(-result.fun))
 
             if abs(result.fun) > max_gradient:
-                max_gradient = result.fun
+                max_gradient = abs(result.fun)
                 params_at_max_gradient = result.x
 
+        print("Maximum gradient: {}".format(max_gradient))
         self.set_params(params_at_max_gradient)
 
