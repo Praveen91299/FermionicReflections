@@ -145,7 +145,7 @@ for op in ops:
 
     trace_vectors.append(v)
 
-from ansatz import *
+from archived.ansatz import *
 from openfermion import FermionOperator, get_sparse_operator
 import scipy
 
