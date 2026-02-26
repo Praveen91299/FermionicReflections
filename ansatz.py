@@ -290,7 +290,8 @@ class ReflectionAnsatz:
 
         if taus == []:    
             self.taus = np.zeros(len(reflections))
-
+        else:
+            self.taus = taus
         return
     
     def add_ref(self, ref, tau):
@@ -346,7 +347,7 @@ class ReflectionAnsatz:
         
         """
         if sparse:
-            assert sp.issparse(H), "Hamiltonian not sparse..."
+            assert scipy.sparse.issparse(H), "Hamiltonian not sparse..."
 
         H_new = deepcopy(H)
         
@@ -556,7 +557,7 @@ class FermionicReflection:
                 op = chem_tbt_to_chem_ferm(R_tbt) + const
                 return get_sparse_operator(jordan_wigner(op), n_qubits)
             
-            return get_sparse_fermop(R_tbt, basis_dict=basis_dict) + const*sp.eye(2**n_qubits)
+            return get_sparse_fermop(R_tbt, basis_dict=basis_dict) + const*scipy.sparse.eye(2**n_qubits)
         else:
             op = chem_tbt_to_chem_ferm(R_tbt) + const
             return op
@@ -635,11 +636,3 @@ class FermionicReflection:
 
         print("\nCompleted gradient optimization, max gradient = {}".format(-result.fun))
         return result.x
-    
-class OrbitalRotation:
-    """
-    Class to describe an orbital rotation
-
-    """
-    def __init__(self):
-        return 

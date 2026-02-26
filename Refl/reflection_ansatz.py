@@ -158,7 +158,7 @@ class ReflectionAnsatz:
         """
         if operator_type == "sparse":
             sparse = True
-            H_new = return_sparse(H)
+            H_new = return_sparse(H, self.n_qubits)
         else:
             sparse = False
         

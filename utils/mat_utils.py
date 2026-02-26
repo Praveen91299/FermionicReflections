@@ -1,5 +1,6 @@
 import numpy as np
 import scipy.sparse as spr
+from openfermion import QubitOperator
 
 def is_close_to_identity(A, tol=1e-6):
     if not spr.issparse(A):
@@ -90,3 +91,45 @@ def pad_2d_to_square(arr, n):
     pad_rows = n - rows
     pad_cols = n - cols
     return np.pad(arr, ((0, pad_rows), (0, pad_cols)), mode='constant', constant_values=0)
+
+def truncate_pauli_hamiltonian(HQ: QubitOperator, tol = 1e-5, n_terms = None, verbose=True):
+    """
+    Truncate a Pauli Hamiltonian upto tolerance
+
+    """
+
+    HQ_new = QubitOperator()
+    if verbose: print("Original term count: {}".format(len(list(HQ.terms.keys()))))
+    if n_terms is not None:
+        #Truncate to number of terms
+
+        paired_list = zip(HQ.terms.keys(), HQ.terms.values())
+        #sort terms
+        paired_list_sorted = sorted(paired_list, key=lambda x: abs(x[1]), reverse=True)
+
+        n = min([len(paired_list_sorted), n_terms])
+        for pair in paired_list_sorted[:n]:
+            HQ_new += QubitOperator(pair[0], pair[1])
+
+    else:
+        #truncate to coefficient
+        for key, coeff in zip(HQ.terms.keys(), HQ.terms.values()):
+            if abs(coeff) >= tol:
+                HQ_new += QubitOperator(key, coeff)
+    
+    if verbose: print("Truncated term count: {}".format(len(list(HQ_new.terms.keys()))))
+    return HQ_new
+
+def ensure_real(HQ, tol=1e-5):
+    """
+    Ensures the coefficients of Pauli products in HQ are real valued (for hermiticity)
+    if magnitude of imaginary part >=tol, prints a warning
+
+    """
+
+    HQ_new = QubitOperator()
+    for term, coeff in zip(HQ.terms.keys(), HQ.terms.values()):
+        if abs(np.imag(coeff)) >= tol: print("Warning (ensure_real): Truncating significant imaginary term in operator.")
+        HQ_new += QubitOperator(term, np.real(coeff))
+    
+    return HQ_new
