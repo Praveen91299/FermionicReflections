@@ -1,4 +1,4 @@
-# Check p24 with some smaller qubit sets
+# h4 minimal generators for chemical accuracy, for Reza
 
 import numpy as np
 

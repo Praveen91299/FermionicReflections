@@ -3,7 +3,7 @@ from openfermion import commutator, expectation, double_commutator
 from scipy.sparse import issparse
 import scipy
 from utils.pickle_utils import *
-from ansatz import *
+from archived.ansatz import *
 from openfermion import count_qubits, get_sparse_operator, FermionOperator, get_fermion_operator, MolecularData
 from utils.hf_utils import *
 from utils.ferm_utils import *
@@ -36,22 +36,39 @@ if __name__ == '__main__':
 
     mh = molecule.get_molecular_hamiltonian()
     H = get_fermion_operator(mh)
-
     n_qubits = count_qubits(H)
     n_electrons = n_qubits//2
-
     Hs = get_sparse_operator(H, n_qubits)
     occ = get_hf_occ(n_electrons, n_qubits//2, spin_ord)
     hf_wfn = get_hf_wfn(occ)
     basis_dict = build_sparse_basis(n_qubits)
 
-    p = get_poly('p29', [3, 4, 5, 6])
-    qubit_pairs, params = iterative_V_construction(8, H, p, 10, hf_wfn, basis_dict=basis_dict, n_random=5, optimization="global", tol=1e-3)
+    
+    poly_types = ['p11']#, 'p29', 'p25']
+    indices = [[3]]#, [2, 3, 4, 5], [3, 4, 5]]
+    n_gens = 10
 
-    R = FermionicReflection(n_qubits, p, "iterative", params_init=params, qubit_pairs = qubit_pairs, basis_dict = basis_dict)
-    # R = FermionicReflection.build_R_iterative(params, 8, p, qubit_pairs, False, basis_dict)
-    fr = ReflectionAnsatz(n_qubits, hf_wfn, [R])
+    Hs_new = deepcopy(Hs)
+    Refl_list = []
 
-    fr.optimize_energy(Hs)
+    for i, poly_type in enumerate(poly_types):
+        p = get_poly(poly_type, indices[i])
+        print('\n\nReflection {} of {} over {} indices.'.format(i+1, poly_type, indices))
 
-    fr.dress_hamiltonian()
+        #find Refl/orbital rotation with respect to new dressed Hamiltonian
+        qubit_pairs, params = iterative_V_construction(n_qubits, Hs_new, p, n_gens, hf_wfn, basis_dict=basis_dict, n_random=1, optimization="global", tol=1e-3)
+
+        R = FermionicReflection(n_qubits, p, "iterative", params_init=params, qubit_pairs = qubit_pairs, basis_dict = basis_dict)
+        Refl_list.append(R)
+
+        #optimize energy with all reflections so far.
+        fr = ReflectionAnsatz(n_qubits, hf_wfn, Refl_list)
+
+        fr.optimize_energy(Hs)
+        e = fr.energy(Hs)
+        g = R.get_gradient(Hs, hf_wfn)
+
+        Hs_new = fr.dress_hamiltonian(Hs)
+        line(50)
+
+        print("Grad: {}\nE: {}\n#gen: {}".format(g, e, len(qubit_pairs)))

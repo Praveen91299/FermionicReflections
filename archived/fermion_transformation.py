@@ -3,7 +3,7 @@
 ###############################################################################
 
 from utils.pickle_utils import get_pkl_object
-from ansatz import FermionicReflection, ReflectionAnsatz, get_poly
+from archived.ansatz import FermionicReflection, ReflectionAnsatz, get_poly
 from openfermion import (
     count_qubits,
     get_sparse_operator,

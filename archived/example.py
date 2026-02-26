@@ -1,5 +1,5 @@
 from utils.pickle_utils import *
-from ansatz import *
+from archived.ansatz import *
 from openfermion import count_qubits, get_sparse_operator, FermionOperator
 from utils.hf_utils import *
 

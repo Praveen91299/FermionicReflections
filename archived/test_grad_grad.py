@@ -3,7 +3,7 @@ from openfermion import commutator, expectation, double_commutator
 from scipy.sparse import issparse
 import scipy
 from utils.pickle_utils import *
-from ansatz import *
+from archived.ansatz import *
 from openfermion import count_qubits, get_sparse_operator, FermionOperator, get_fermion_operator, MolecularData
 from utils.hf_utils import *
 from utils.ferm_utils import *

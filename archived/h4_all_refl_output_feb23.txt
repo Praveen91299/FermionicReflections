@@ -1,0 +1,957 @@
+PyScf Calculation complete. Hartree-Fock energy: -2.0985459369977635 
+FCI energy: -2.1663874486347625
+...Built sparse basis for 8 qubits
+
+Generator  1
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.86334171 0.21148011 0.09907464 0.84114753 0.48608918 0.78286757
+ 0.7445345  0.26515238 0.24900516 0.74083922 0.05912995 0.37775008
+ 0.3389501  0.25985121 0.04771436 0.39906618 0.68420344 0.6064166
+ 0.46591197 0.48206191 0.4669505  0.09499505 0.4504994  0.15048678
+ 0.71395856 0.68170837 0.4238755  0.24787778 0.18394615 0.17567552
+ 0.52505156 0.24184875 0.85313638 0.78242371 0.28936501 0.63447497
+ 0.78312001 0.45688627 0.80083206 0.20603685 0.81794644 0.30009218
+ 0.19246412 0.83068362 0.05144025 0.62478089 0.13403078 0.50169936
+ 0.55975007 0.10739265 0.54233935 0.04490157 0.09679583 0.67977255
+ 0.95001268 0.50272245]
+Completed optimization, gradient = 0.18889005779746848
+Maximum gradient: 0.18889005779746848
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.76528743 0.57397854 0.34219881 0.36585424 0.19972514 0.60052311
+ 0.18668495 0.0283293  0.49527472 0.41298623 0.11690187 0.91400542
+ 0.62423721 0.87959841 0.36533198 0.42579951 0.20895525 0.03371527
+ 0.37568565 0.0369321  0.50437557 0.76884924 0.92553474 0.26775143
+ 0.73892724 0.31325886 0.66900187 0.58834243 0.63645448 0.98874229
+ 0.93032638 0.51471304 0.06062474 0.09447186 0.41246523 0.10872394
+ 0.76383331 0.65218168 0.80230774 0.56768038 0.87244966 0.62657909
+ 0.14450412 0.01308996 0.13126272 0.74660262 0.48300946 0.47004574
+ 0.26684053 0.21907464 0.46744988 0.11007507 0.61062408 0.33533354
+ 0.02065355 0.75927179]
+Completed optimization, gradient = 0.18889002511158962
+Maximum gradient: 0.18889002511158962
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.51229881 0.01915175 0.18902514 0.9821318  0.07498651 0.70902857
+ 0.08697609 0.96809897 0.89259996 0.67257535 0.24747562 0.2502268
+ 0.70455556 0.01352243 0.49052078 0.10410105 0.18373994 0.48499853
+ 0.49930512 0.296568   0.86378494 0.48473301 0.94591655 0.00377734
+ 0.26795222 0.07340622 0.28420902 0.3887079  0.74476737 0.91737578
+ 0.94940844 0.4867226  0.95154018 0.19501489 0.54622599 0.23865234
+ 0.22324227 0.61300011 0.26647064 0.77917743 0.42341357 0.53549277
+ 0.96702554 0.10140594 0.20717819 0.16838567 0.36695478 0.4997882
+ 0.42201801 0.30591886 0.01240974 0.39430267 0.55462144 0.52229374
+ 0.1506964  0.40013835]
+Completed optimization, gradient = 0.1888900268342862
+Maximum gradient: 0.1888900268342862
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.39454055 0.0246869  0.20317171 0.27599396 0.30706552 0.95505199
+ 0.12800028 0.60322757 0.13764747 0.76177535 0.47274566 0.03878509
+ 0.71293138 0.20194739 0.39621247 0.90757077 0.47210734 0.12051244
+ 0.44756058 0.49816441 0.97895751 0.70092293 0.12345251 0.47995507
+ 0.51032508 0.18974253 0.89388061 0.79016407 0.8381993  0.90141177
+ 0.96056496 0.14935789 0.91837383 0.68787377 0.30591209 0.5758754
+ 0.85562572 0.74151573 0.17866481 0.63928253 0.87595013 0.31777879
+ 0.53672716 0.12775874 0.04761626 0.03839796 0.91820387 0.3386999
+ 0.75725906 0.9792567  0.81755816 0.67996636 0.09998405 0.33075803
+ 0.55030428 0.61871825]
+Completed optimization, gradient = 0.37778007583316736
+Maximum gradient: 0.37778007583316736
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.09421227 0.01784731 0.1285875  0.28857407 0.93124033 0.79649505
+ 0.71134412 0.83998703 0.44690249 0.27717656 0.10547794 0.46926213
+ 0.9882271  0.99801949 0.65162603 0.95912065 0.99905491 0.11050474
+ 0.48741198 0.58507632 0.65226876 0.36478425 0.69770772 0.20110023
+ 0.24540931 0.09497976 0.16423148 0.28595451 0.86694371 0.06533548
+ 0.36894044 0.82221164 0.10569611 0.28067185 0.13308692 0.20635108
+ 0.43713195 0.24464425 0.78174674 0.83656621 0.87871431 0.87007805
+ 0.72505499 0.71571999 0.45989225 0.39575603 0.54467679 0.83289098
+ 0.82015765 0.86577363 0.56839262 0.06550311 0.61328092 0.77265423
+ 0.24503648 0.8945053 ]
+Completed optimization, gradient = 0.37778007344478703
+Maximum gradient: 0.37778007344478703
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.7142725  0.91673156 0.5121663  0.24847064 0.04576087 0.32297503
+ 0.93912806 0.12144031 0.71660762 0.50945805 0.41785014 0.00908767
+ 0.92158842 0.15904729 0.87487246 0.35733156 0.95970792 0.76760793
+ 0.49406915 0.63257373 0.22314224 0.3188318  0.48485697 0.8158997
+ 0.07185576 0.79413789 0.17697348 0.33369227 0.26668955 0.36930553
+ 0.32066525 0.9075723  0.00731083 0.13444895 0.10106466 0.34853397
+ 0.02192165 0.30053292 0.76777783 0.25614904 0.21833459 0.09659795
+ 0.29481221 0.08773828 0.34238901 0.55373526 0.17288648 0.83997497
+ 0.90298523 0.69474963 0.67251651 0.86323775 0.56486695 0.90792776
+ 0.50025145 0.87385667]
+Completed optimization, gradient = 0.37778007556414406
+Maximum gradient: 0.37778007556414406
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.26643614 0.17336756 0.92955459 0.35031689 0.26391278 0.15091166
+ 0.1821837  0.89838207 0.94050123 0.33300837 0.24421758 0.32712108
+ 0.91472146 0.5673548  0.2346811  0.19281425 0.34430196 0.31942966
+ 0.95242303 0.26241377 0.53288306 0.04224382 0.77219568 0.1038615
+ 0.90951086 0.17355349 0.72362049 0.0409365  0.56412783 0.8879591
+ 0.65934133 0.43732847 0.56224211 0.11186418 0.78325673 0.03272628
+ 0.71744794 0.56728763 0.29029753 0.82835824 0.68842862 0.0489849
+ 0.21596119 0.51029663 0.07027762 0.19911142 0.12091798 0.36241265
+ 0.98591556 0.52155052 0.07337271 0.89610509 0.70878908 0.14344877
+ 0.91037352 0.98210109]
+Completed optimization, gradient = 0.23884854661989108
+Maximum gradient: 0.23884854661989108
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.01800673 0.12618752 0.20729339 0.65056695 0.46189639 0.87130852
+ 0.78825433 0.80107799 0.47611087 0.67826992 0.94149811 0.05850142
+ 0.2157761  0.00532221 0.39411938 0.87739893 0.86646194 0.78807698
+ 0.22439541 0.88957385 0.7965169  0.98909089 0.32926371 0.59836338
+ 0.80316617 0.41589585 0.98041389 0.74492389 0.52529189 0.54915435
+ 0.82530892 0.44084502 0.45801624 0.10430733 0.16905617 0.39022504
+ 0.62883685 0.64985196 0.90963324 0.16070514 0.52375258 0.90384211
+ 0.41936651 0.69674944 0.83276527 0.51960654 0.04366773 0.89522911
+ 0.78948608 0.87037188 0.65572055 0.8146482  0.72216705 0.61797908
+ 0.80901716 0.8902763 ]
+Completed optimization, gradient = 0.25374222804550595
+Maximum gradient: 0.25374222804550595
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Trial 2, Initial params: [0.93309564 0.28676001 0.5471768  0.10498768 0.66712701 0.68650334
+ 0.54174493 0.5942458  0.85246051 0.26573253 0.76688525 0.33900481
+ 0.10826095 0.3885756  0.53455533 0.8975535  0.54678484 0.82326993
+ 0.26701234 0.85395178 0.56773169 0.27321836 0.6781181  0.83570715
+ 0.49805091 0.84976056 0.48381001 0.4050129  0.18520006 0.38439628
+ 0.40017041 0.38840837 0.69130192 0.45161051 0.27871155 0.72086551
+ 0.94553117 0.64647215 0.79762219 0.50281127 0.67637579 0.83648125
+ 0.18460693 0.82734766 0.77851831 0.42725279 0.85289199 0.1392116
+ 0.57984932 0.43490024 0.41047392 0.87258022 0.63373832 0.02985192
+ 0.08650826 0.46840486]
+Completed optimization, gradient = 0.4093557904476354
+Maximum gradient: 0.4093557904476354
+Maximum gradient 0.4093557904476354 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.134012961756489
+Trial 2, Initial Tau: [0.81298551]
+Completed optimization, energy = -2.1340129617564902
+
+Optimization terminated successfully, energy: -2.1340129617564902
+(-2.1340129617564902+0j)
+Original term count: 22819
+Truncated term count: 19858
+
+Generator  2
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.1711573857532363
+Maximum gradient: 0.1711573857532363
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.1711644545356955
+Maximum gradient: 0.1711644545356955
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.33894271553690236
+Maximum gradient: 0.33894271553690236
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.33913226207057845
+Maximum gradient: 0.33913226207057845
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.33913749985654673
+Maximum gradient: 0.33913749985654673
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.22272449062667865
+Maximum gradient: 0.22272449062667865
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.24521187349963708
+Maximum gradient: 0.24521187349963708
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.38896883786979275
+Maximum gradient: 0.38896883786979275
+Maximum gradient 0.38896883786979275 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.1560910873385195
+Trial 2, Initial Tau: [0.44339871]
+Completed optimization, energy = -2.1560910873385226
+
+Optimization terminated successfully, energy: -2.1560910873385226
+(-2.1560910873385226-1.734723475976807e-18j)
+Original term count: 32599
+Truncated term count: 22637
+
+Generator  3
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.07651227316768038
+Maximum gradient: 0.07651227316768038
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.07651228668405288
+Maximum gradient: 0.07651228668405288
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.14140731983402138
+Maximum gradient: 0.14140731983402138
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.14303691722104173
+Maximum gradient: 0.14303691722104173
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.1484320368498186
+Maximum gradient: 0.1484320368498186
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.11964842127196526
+Maximum gradient: 0.11964842127196526
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.13398503910790088
+Maximum gradient: 0.13398503910790088
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.18567911061979933
+Maximum gradient: 0.18567911061979933
+Maximum gradient 0.18567911061979933 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.162645628243218
+Trial 2, Initial Tau: [0.13251027]
+Completed optimization, energy = -2.1626456282432183
+
+Optimization terminated successfully, energy: -2.1626456282432183
+(-2.1626456282432183+8.131516293641283e-20j)
+Original term count: 32702
+Truncated term count: 23399
+
+Generator  4
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.06366545482444477
+Maximum gradient: 0.06366545482444477
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.06366545811762084
+Maximum gradient: 0.06366545811762084
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.10831095496095489
+Maximum gradient: 0.10831095496095489
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.10937072868933874
+Maximum gradient: 0.10937072868933874
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.1103712840354857
+Maximum gradient: 0.1103712840354857
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.08577328310544649
+Maximum gradient: 0.08577328310544649
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.08714730381981692
+Maximum gradient: 0.08714730381981692
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.11777845658836454
+Maximum gradient: 0.11777845658836454
+Maximum gradient 0.11777845658836454 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.1651094874291865
+Trial 2, Initial Tau: [0.32290804]
+Completed optimization, energy = -2.165109487441278
+
+Optimization terminated successfully, energy: -2.165109487441278
+(-2.165109487441278+9.351243737687476e-19j)
+Original term count: 32630
+Truncated term count: 23092
+
+Generator  5
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.028106091039751223
+Maximum gradient: 0.028106091039751223
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.025255130291035273
+Maximum gradient: 0.025255130291035273
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.04476215461443928
+Maximum gradient: 0.04476215461443928
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.04665911595935187
+Maximum gradient: 0.04665911595935187
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.04812354360084757
+Maximum gradient: 0.04812354360084757
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.04283890798724144
+Maximum gradient: 0.04283890798724144
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.04324853737644019
+Maximum gradient: 0.04324853737644019
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.06167686496405406
+Maximum gradient: 0.06167686496405406
+Maximum gradient 0.06167686496405406 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.165752786164613
+Trial 2, Initial Tau: [0.93944941]
+Completed optimization, energy = -2.1657527861649504
+
+Optimization terminated successfully, energy: -2.1657527861649504
+(-2.1657527861649504-2.371692252312041e-20j)
+Original term count: 32574
+Truncated term count: 23017
+
+Generator  6
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.019655770847895833
+Maximum gradient: 0.019655770847895833
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.01684970042502422
+Maximum gradient: 0.01684970042502422
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.02451349753268317
+Maximum gradient: 0.02451349753268317
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.02753717474724509
+Maximum gradient: 0.02753717474724509
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.027444167270697498
+Maximum gradient: 0.027444167270697498
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.02678993337462658
+Maximum gradient: 0.02678993337462658
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.024112794918456245
+Maximum gradient: 0.024112794918456245
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.034190600376831234
+Maximum gradient: 0.034190600376831234
+Maximum gradient 0.034190600376831234 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.16602162027509
+Trial 2, Initial Tau: [0.29285767]
+Completed optimization, energy = -2.166021620275112
+
+Optimization terminated successfully, energy: -2.166021620275112
+(-2.166021620275112-1.2430208500956857e-19j)
+Original term count: 32527
+Truncated term count: 22839
+
+Generator  7
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.012337431103220444
+Maximum gradient: 0.012337431103220444
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.01269080097485827
+Maximum gradient: 0.01269080097485827
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.014483561945248049
+Maximum gradient: 0.014483561945248049
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.01656480605052281
+Maximum gradient: 0.01656480605052281
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.016757535823567975
+Maximum gradient: 0.016757535823567975
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.017212224728888628
+Maximum gradient: 0.017212224728888628
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.014473428654128135
+Maximum gradient: 0.014473428654128135
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.020471824695144705
+Maximum gradient: 0.020471824695144705
+Maximum gradient 0.020471824695144705 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.16610416979113
+Trial 2, Initial Tau: [0.31266712]
+Completed optimization, energy = -2.166104169791131
+
+Optimization terminated successfully, energy: -2.166104169791131
+(-2.166104169791131+7.707999820014133e-20j)
+Original term count: 32430
+Truncated term count: 22661
+
+Generator  8
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.009522468671358322
+Maximum gradient: 0.009522468671358322
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.008448684463790901
+Maximum gradient: 0.008448684463790901
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0103891543385324
+Maximum gradient: 0.0103891543385324
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.011934403682774868
+Maximum gradient: 0.011934403682774868
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.011009142743484513
+Maximum gradient: 0.011009142743484513
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.01191674697227787
+Maximum gradient: 0.01191674697227787
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.010328585023066165
+Maximum gradient: 0.010328585023066165
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.013093575910498369
+Maximum gradient: 0.013093575910498369
+Maximum gradient 0.013093575910498369 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.1661232910706434
+Trial 2, Initial Tau: [0.92788764]
+Completed optimization, energy = -2.1661232910628776
+
+Optimization terminated successfully, energy: -2.1661232910706434
+(-2.1661232910706434-1.3271947492290818e-19j)
+Original term count: 32272
+Truncated term count: 22526
+
+Generator  9
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.005130472208069472
+Maximum gradient: 0.005130472208069472
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.005644608164029872
+Maximum gradient: 0.005644608164029872
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.005682699315757508
+Maximum gradient: 0.005682699315757508
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.006961759504871722
+Maximum gradient: 0.006961759504871722
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.006581519914205457
+Maximum gradient: 0.006581519914205457
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.007121799623870115
+Maximum gradient: 0.007121799623870115
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.005356167356112218
+Maximum gradient: 0.005356167356112218
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0077028042804332675
+Maximum gradient: 0.0077028042804332675
+Maximum gradient 0.0077028042804332675 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.1661352586063662
+Trial 2, Initial Tau: [0.40758409]
+Completed optimization, energy = -2.1661352586063587
+
+Optimization terminated successfully, energy: -2.1661352586063662
+(-2.1661352586063662+1.852884572118782e-21j)
+Original term count: 32101
+Truncated term count: 22456
+
+Generator  10
+Optimizing gradient for class  p21
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0038675797543204146
+Maximum gradient: 0.0038675797543204146
+Optimizing gradient for class  p22
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.004280305575886553
+Maximum gradient: 0.004280305575886553
+Optimizing gradient for class  p23
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0
+Maximum gradient: 0.0
+Optimizing gradient for class  p24
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.004419770026464424
+Maximum gradient: 0.004419770026464424
+Optimizing gradient for class  p25
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.005125214327950112
+Maximum gradient: 0.005125214327950112
+Optimizing gradient for class  p26
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.004850758465458892
+Maximum gradient: 0.004850758465458892
+Optimizing gradient for class  p27
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.0052084086869116685
+Maximum gradient: 0.0052084086869116685
+Optimizing gradient for class  p28
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.00405424111752343
+Maximum gradient: 0.00405424111752343
+Optimizing gradient for class  p29
+Entering gradient optimization...
+Trial 1, Initial params: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, gradient = 0.005673086778316155
+Maximum gradient: 0.005673086778316155
+Maximum gradient 0.005673086778316155 for class p29 
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.1661405623533274
+Trial 2, Initial Tau: [0.42609364]
+Completed optimization, energy = -2.166140562353336
+
+Optimization terminated successfully, energy: -2.166140562353336
+(-2.166140562353336+4.685150989500349e-20j)
+Original term count: 31981
+Truncated term count: 22405
+
+Beginning energy optimization with 1 reflections. Energy at: (-2.1340129617564902+0j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0.]
+Completed optimization, energy = -2.134012961756489
+Trial 2, Initial Tau: [0.30207015]
+Completed optimization, energy = -2.1340129617562495
+
+Optimization terminated successfully, energy: -2.134012961756489
+
+Beginning energy optimization with 2 reflections. Energy at: (-2.1557106022566166+7.047314121155779e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0.]
+Completed optimization, energy = -2.156370259861281
+Trial 2, Initial Tau: [0.12172772 0.00680127]
+Completed optimization, energy = -2.156370259862012
+
+Optimization terminated successfully, energy: -2.156370259862012
+
+Beginning energy optimization with 3 reflections. Energy at: (-2.1619717893672434+4.607859233063394e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0.]
+Completed optimization, energy = -2.162336016538204
+Trial 2, Initial Tau: [0.12475972 0.26005291 0.92310172]
+Completed optimization, energy = -2.1623360165416208
+
+Optimization terminated successfully, energy: -2.1623360165416208
+
+Beginning energy optimization with 4 reflections. Energy at: (-2.1637146943806256-3.2526065174565133e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0.]
+Completed optimization, energy = -2.163769427344448
+Trial 2, Initial Tau: [0.07619496 0.81991394 0.79511152 0.2860199 ]
+Completed optimization, energy = -2.1637694269884795
+
+Optimization terminated successfully, energy: -2.163769427344448
+
+Beginning energy optimization with 5 reflections. Energy at: (-2.16495026809093+1.0842021724855044e-18j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0. 0.]
+Completed optimization, energy = -2.165067209530348
+Trial 2, Initial Tau: [0.12371482 0.4066069  0.86893223 0.76359456 0.81461159]
+Completed optimization, energy = -2.165067209560537
+
+Optimization terminated successfully, energy: -2.165067209560537
+
+Beginning energy optimization with 6 reflections. Energy at: (-2.165243250830757-1.0842021724855044e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0. 0. 0.]
+Completed optimization, energy = -2.165414350105737
+Trial 2, Initial Tau: [0.43834841 0.66416342 0.97993874 0.36178878 0.96120552 0.19208571]
+Completed optimization, energy = -2.1654143501470267
+
+Optimization terminated successfully, energy: -2.1654143501470267
+
+Beginning energy optimization with 7 reflections. Energy at: (-2.1653007862046136-2.168404344971009e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, energy = -2.1654788196098953
+Trial 2, Initial Tau: [0.6466511  0.18385274 0.68188137 0.44469051 0.09730823 0.21658497
+ 0.47750705]
+Completed optimization, energy = -2.1654788193192283
+
+Optimization terminated successfully, energy: -2.1654788196098953
+
+Beginning energy optimization with 8 reflections. Energy at: (-2.1652905507062212+0j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, energy = -2.1654829801287834
+Trial 2, Initial Tau: [0.22985529 0.87573313 0.56531949 0.27075149 0.98918378 0.935812
+ 0.43332121 0.63549558]
+Completed optimization, energy = -2.1654829803141395
+
+Optimization terminated successfully, energy: -2.1654829803141395
+
+Beginning energy optimization with 9 reflections. Energy at: (-2.1652717678217313+1.0842021724855044e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, energy = -2.1654830934206757
+Trial 2, Initial Tau: [0.85770559 0.53467611 0.52712714 0.86929745 0.39611876 0.42372686
+ 0.86283773 0.62556366 0.7991615 ]
+Completed optimization, energy = -2.1654830919819203
+
+Optimization terminated successfully, energy: -2.1654830934206757
+
+Beginning energy optimization with 10 reflections. Energy at: (-2.165291347110529-2.168404344971009e-19j)
+Entering energy optimization...
+Trial 1, Initial Tau: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Completed optimization, energy = -2.1654853361413737
+Trial 2, Initial Tau: [0.72950835 0.8334799  0.91495448 0.91550009 0.93787078 0.69320237
+ 0.38433966 0.85707674 0.91710973 0.06929573]
+Completed optimization, energy = -2.1654853360790183
+
+Optimization terminated successfully, energy: -2.1654853361413737
+Saving ansatz with reflections to file:  ./saved/data/H4_1.0_all_refl_1e-5.pkl
