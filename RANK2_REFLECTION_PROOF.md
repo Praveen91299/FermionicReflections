@@ -42,11 +42,6 @@ The same equations immediately imply
 a_i\in\{-2,0\},\qquad b_{ij}\in\{-2,0,2,4\}.
 \]
 
-The \(-2\) in the second set is necessary: for example,
-\(1-2n_pn_q\) is one of the listed solutions. Hence the coefficient set
-\(c_{pq}\in\{0,2,4\}\) in the proposed text is a typo unless a different
-coefficient convention is being used.
-
 The program calls an index *essential* when it occurs in at least one nonzero
 linear or quadratic monomial. It discards nonessential dummy indices and
 canonically minimizes each coefficient tuple over all index permutations. Its

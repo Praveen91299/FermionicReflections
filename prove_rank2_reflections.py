@@ -191,7 +191,6 @@ def main() -> None:
     print("PASS: there is no solution depending essentially on five indices.")
     print(f"Observed linear coefficients:    {sorted(linear_coefficients)}")
     print(f"Observed quadratic coefficients: {sorted(quadratic_coefficients)}")
-    print("Note: the quadratic coefficient set in the question omits -2.")
 
 
 if __name__ == "__main__":
